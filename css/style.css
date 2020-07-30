@@ -86,41 +86,24 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@keyframes Glow{
-    0% {
-        transform: scale(1,1);
-    }
-    25% {
-        transform: scale(0.8,0.8);
-    }
-    50% {
-        transform: scale(1,1);
-    }
-    100% {
-        transform: scale(1,1);
-    }
-};
+
 .ctitle{
     font-size: 96px;
-    animation: Glow 5s ease-in-out infinite;
 }
 .year{
     font-size: 136px;
-    animation: Glow 5s ease-in-out infinite;
 }
 .byline{
     font-size: 26px;
     position: relative;
     top:-5px;
     text-align: center;
-    animation: Glow 5s ease-in-out infinite;
 }
 .date{
     font-size: 46px;
     text-align: center;
     position: relative;
     top:30px;
-    animation: Glow 5s ease-in-out infinite;
 }
 .standing{
     /* display: flex;
