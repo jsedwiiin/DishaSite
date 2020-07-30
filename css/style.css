@@ -99,7 +99,7 @@ body{
     100% {
         transform: scale(1,1);
     }
-}
+};
 .ctitle{
     font-size: 96px;
     animation: Glow 5s ease-in-out infinite;
