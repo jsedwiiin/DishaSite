@@ -11,6 +11,7 @@ body{
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../Images/multicolored-abstract-painting-1509534\ \(2\).jpg);
     background-size: cover;
     overflow: hidden;
+    background-repeat: repeat-y;
     
 }
 .navbarr{
@@ -152,7 +153,7 @@ body{
     height: 63px;
     border-bottom: 2px solid rgba(222, 224, 227,0.7);
     transition: ease-in 0.7s;
-    animation: TableRow 2s infinite;
+    
 }
 .stand tbody td{
     font-size: 26px;
@@ -163,12 +164,40 @@ body{
     background-color: rgba(222, 224, 227,0.3);
 
 }
+.result{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 100%;
+}
+.restitle{
+    overflow-y: auto;
+    font-family: 'Merienda One', cursive;
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 75px;
 
-/* @keyframes TableRow{
-    from {
-        background-color: none;
-    }
-    to {
-        background-color: rgba(222, 224, 227,0.3);
-    }
-} */
+}
+.conres{
+    position: relative ;
+    top: 700px;
+    width: 550px;
+    font-family: 'Merienda One', cursive;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.conres dt{
+    font-size: 36px;
+    color: white;
+    height: 60px;
+    margin: 12px 0;
+}
+.conres dd{
+    position: relative;
+    left: 50px;
+    font-size: 25px;
+    color: white;
+}
