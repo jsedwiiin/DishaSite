@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Cormorant+Infant:ital,wght@1,300;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../Images/multicolored-abstract-painting-1509534.jpg);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+.navbarr{
+    position:fixed;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+}
+.bar{
+    opacity: 0.8;
+    color: white;
+    width: 100px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    transition: ease 0.4s;
+}
+.bar a{
+    color: white;
+    text-decoration: none;
+
+}
+ .active{
+    background-color: rgba(222, 224, 227,0.3);
+    width: 80%;
+    opacity: 1;
+
+}
+.bar:hover{
+    opacity: 1;
+}
+
+.social {
+    
+    margin-right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    position: absolute;
+    top: 50%;
+    right: -3%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 0px;
+    background-color: rgba(222, 224, 227,0.3);
+    box-sizing: content-box;
+    transition:  0.3s;
+}
+
+.social div:hover, img:hover{
+    transform: scale(1.04,1.04);
+
+}
+.social img{
+    display: flex;
+    opacity: 0.5;
+    filter: invert(100%);
+}
+.mainc{
+    font-family: 'Merienda One', cursive;
+    font-weight: lighter;
+    
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ctitle{
+    font-size: 96px;
+}
+.year{
+    font-size: 136px;
+}
+.byline{
+    font-size: 26px;
+    position: relative;
+    top:-5px;
+    text-align: center;
+}
+.date{
+    font-size: 46px;
+    text-align: center;
+    position: relative;
+    top:30px;
+}
+.standing{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    
+
+    
+}
+.score{
+    font-family: 'Merienda One', cursive;
+    color:white;
+    font-size: 75px;
+    position: relative;
+    bottom: 20px;
+
+}
+.stand{
+    position: relative;
+    top:10%;
+    left: 5%;
+    border-collapse: collapse;
+    margin: 12px;
+    font-family: 'Merienda One', cursive;
+    color:white;
+    border-right: 2px dotted rgba(222, 224, 227,0.3);
+    border-bottom: 2px dotted rgba(222, 224, 227,0.3);
+    min-width: 550px;
+    box-shadow: 4px 4px 5px white;
+}
+
+.stand thead tr{
+
+    text-align: left;
+    height: 73px;
+    font-size: 32px;
+    background-color: rgba(222, 224, 227,0.3);
+
+}
+.stand tbody tr{
+
+    text-align: left;
+    height: 63px;
+    border-bottom: 2px solid rgba(222, 224, 227,0.7);
+    transition: ease-in 0.7s;
+    animation: TableRow 2s infinite;
+}
+.stand tbody td{
+    font-size: 26px;
+    padding: 9px 10px;
+}
+
+.stand tbody tr:hover{
+    background-color: rgba(222, 224, 227,0.3);
+
+}
+
+/* @keyframes TableRow{
+    from {
+        background-color: none;
+    }
+    to {
+        background-color: rgba(222, 224, 227,0.3);
+    }
+} */
