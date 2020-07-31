@@ -12,6 +12,7 @@ body{
     background-size: cover;
     overflow: hidden;
     background-repeat: repeat-y;
+    z-index: -1;
     
 }
 .navbarr{
@@ -68,7 +69,7 @@ body{
     transition:  0.3s;
 }
 
-.social div:hover, img:hover{
+.social div:hover,.social img:hover{
     transform: scale(1.04,1.04);
 
 }
@@ -201,3 +202,31 @@ body{
     font-size: 25px;
     color: white;
 }
+.pillar-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    flex: 1;
+    align-items: center;
+    justify-self: center;
+    top: 30%;
+    right: 55px;
+    font-family: 'Merienda One', cursive;
+    font-size: 55px;
+    color: white;
+    
+}
+.n{ 
+    position: relative;
+    display: inline;
+    font-size: 105px;
+    top: 35px;
+
+}
+.n2{
+   position: relative;
+   left: 120px; 
+   bottom: 40px;
+}
+
