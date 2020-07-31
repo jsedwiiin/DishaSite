@@ -12,7 +12,7 @@ body{
     background-size: cover;
     overflow: hidden;
     background-repeat: repeat-y;
-    z-index: -1;
+   
     
 }
 .navbarr{
@@ -107,10 +107,7 @@ body{
     top:30px;
 }
 .standing{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+
     position: absolute;
     top: 10%;
     left: 30%;
@@ -230,5 +227,94 @@ body{
    bottom: 40px;
 }
 
+/* 
+From Here Starts the responisve Code 
+now Particularly for mobile screen S */
 
-/* From here starts the code for responsive  */
+/* the Nav Bar Change*/
+@media all and (max-width: 400px  ){
+    body{
+        background-image: url(../Images/multicolored-abstract-painting-1509534\ \(2\).jpg);
+        background-repeat: repeat-y;
+        background-size: cover;
+        overflow-y: scroll;
+    }
+    .navbarr{
+        flex-direction: column;
+        position: relative;
+        left: 0%;
+    }
+    .bar{
+        width: 100px;
+    }
+    .bar a{
+        text-decoration: none;
+    }
+    .social{
+        display: none;
+
+    }
+    .mainc{
+        left: 55%;;
+    }
+    .ctitle{
+        font-size: 46px;
+    }
+    .year{
+        font-size: 75px;
+    }
+    .byline{
+        font-size: 16px;
+    }
+    .date{
+        font-size: 20px;
+    }
+    .score{
+        font-size: 46px;
+        position: relative;
+        top: 140px;
+        left: -50px;
+        transform: scale(0.8,0.8);
+    }
+    .stand{
+        position: relative;
+        top: 100px;
+        left: -75px;
+        margin: 2px;
+        min-width: 180px;
+        transform: scale(0.8,0.8);
+    }
+    .stand thead{
+        height: 34px;
+        font-size: 36px;
+    }
+    .stand tbody{
+
+        font-size: 16px;
+        padding: 4.5px 5px;
+    }
+    .restitle{
+        font-size: 36px;
+        position: absolute;
+        top: 220px;
+        left: 30%;
+    }
+    .conres{
+        position: relative;
+        top: 550px;
+        left: 140px;
+    }
+    .conres dt{
+        font-size: 26px;
+        margin: 6px 0;
+    }
+    .conres dd{
+        font-size: 16px;
+    }
+    .pillar-box{
+        font-size: 35px;
+    }
+
+
+
+}
