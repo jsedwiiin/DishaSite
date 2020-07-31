@@ -232,7 +232,7 @@ From Here Starts the responisve Code
 now Particularly for mobile screen S */
 
 /* the Nav Bar Change*/
-@media all and (max-width: 400px  ){
+@media all and (max-width: 1000px  ){
     body{
         background-image: url(../Images/multicolored-abstract-painting-1509534\ \(2\).jpg);
         background-repeat: repeat-y;
